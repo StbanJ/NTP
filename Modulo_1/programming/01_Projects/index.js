@@ -5,11 +5,12 @@ const app = express();
 
 // routes
 
-const {RouterIndex} = require('./routes/index');
+const { RouterIndex } = require("./routes/index_2");
 
-app.use("/",RouterIndex)
-app.use("/user",RouterIndex)
-app.use("/user/data",RouterIndex)
+app.use("/deber-video", RouterIndex);
+
+// app.use("/user",RouterIndex)
+// app.use("/user/data",RouterIndex)
 
 /*
   "/" + "/" = "//" => "/"
